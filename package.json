@@ -1,5 +1,5 @@
 {
-  "name": "navbar-dropdown-v1",
+  "name": "onlyads",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,12 +8,15 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap-icons": "^1.8.1",
     "cors": "^2.8.5",
+    "emailjs-com": "^3.2.0",
     "express": "^4.17.3",
     "nodemailer": "^6.7.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-hook-form": "^7.29.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
+    "react-toastify": "^8.2.0",
     "sass": "^1.49.9"
   },
   "scripts": {

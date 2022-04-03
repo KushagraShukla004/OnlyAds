@@ -82,12 +82,12 @@ function Signup() {
                   padding-left="2.5rem"
                   padding-right="2.5rem"
                 >
-                  Login
+                  Sign up
                 </button>
                 <p class="small fw-bold mt-2 pt-1 mb-0">
-                  Don't have an account?{" "}
-                  <a href="#!" class="link-danger">
-                    Register
+                  Already have an account?{" "}
+                  <a href="./login.js" class="link-danger">
+                    Login
                   </a>
                 </p>
               </div>
