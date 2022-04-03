@@ -7,6 +7,7 @@ import Services from "./components/pages/Services";
 import Products from "./components/pages/Products";
 import Login from "./components/pages/login/login";
 import Signup from "./components/pages/login/signup";
+import ContactForm from "./components/contactform";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/products" component={Products} />
           <Route path="/sign-up" component={Signup} />
           <Route path="/login" component={Login} />
+          <Route path="/contact-us" component={ContactForm} />
         </Switch>
       </Router>
     </>
