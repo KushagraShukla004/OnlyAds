@@ -37,7 +37,7 @@ function Footer() {
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
-            <Link to="/">Contact</Link>
+            <Link to="/contact-us">Contact</Link>
             <Link to="/">Support</Link>
             <Link to="/">Destinations</Link>
             <Link to="/">Sponsorships</Link>
@@ -68,7 +68,7 @@ function Footer() {
               <i class="fab fa-typo3" />
             </Link>
           </div>
-          <small class="website-rights">OnlyAds © 2020</small>
+          <small class="website-rights">OnlyAds © 2022</small>
           <div class="social-icons">
             <Link
               class="social-icon-link facebook"
