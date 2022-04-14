@@ -4,20 +4,24 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import Services from "./pages/Services";
 import Products from "./pages/Products";
 import Login from "./pages/login/login";
-import Signup from "./page/login/signup";
-import ContactForm from "./pages/contactform";
-
-import Services from "./components/pages/Services";
-import Products from "./components/pages/Products";
-import Login from "./components/pages/login/login";
-import Signup from "./components/pages/login/signup";
-
+import Signup from "./pages/login/signup";
 import ContactForm from "./components/contactform";
+import firebase from "firebase";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyAzE22GKxTZYzRDd5_zlntGvF6Klf4cIYA",
+  authDomain: "onlyads-73fad.firebaseapp.com",
+  projectId: "onlyads-73fad",
+  storageBucket: "onlyads-73fad.appspot.com",
+  messagingSenderId: "890652105568",
+  appId: "1:890652105568:web:56924ef04b5f9b4e8f5c05",
+};
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
 
 function App() {
   return (
