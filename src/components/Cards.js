@@ -5,7 +5,7 @@ import CardItem from "./CardItem";
 function Cards() {
   return (
     <div className="cards">
-      <h1>Heading 1</h1>
+      <h1>Our Services</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
@@ -37,7 +37,7 @@ function Cards() {
             />
             <CardItem
               src="images/true_coffee.jpg"
-              text="We are Ready whenever you are"
+              text="We are READY whenever you are"
               label="Sign-Up"
               path="/sign-up"
             />
