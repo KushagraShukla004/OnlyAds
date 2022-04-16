@@ -94,7 +94,7 @@ export default function Signup() {
               onSubmit={handleSubmit}
               sx={{ mt: 1 }}
             >
-              <TextField
+              {/* <TextField
                 margin="normal"
                 required
                 fullWidth
@@ -102,7 +102,7 @@ export default function Signup() {
                 label="User Name"
                 name="username"
                 autoComplete="username"
-              />
+              /> */}
               <TextField
                 margin="normal"
                 required
