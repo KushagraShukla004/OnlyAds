@@ -129,18 +129,10 @@ export default function Signup() {
                 <img
                   title={isRevealPwd ? "Hide password" : "Show password"}
                   src={isRevealPwd ? hidePwdImg : showPwdImg}
+                  alt=""
                   onClick={() => setIsRevealPwd((prevState) => !prevState)}
                 />
               </div>
-              {/* <TextField
-                margin="normal"
-                required
-                fullWidth
-                name="confirm_password"
-                label="Confirm Password"
-                type="password"
-                id="confirm_password"
-              /> */}
               <div className="pwd-container">
                 <TextField
                   margin="normal"
@@ -156,6 +148,7 @@ export default function Signup() {
                 <img
                   title={isRevealPwd1 ? "Hide password" : "Show password"}
                   src={isRevealPwd1 ? hidePwdImg : showPwdImg}
+                  alt=""
                   onClick={() => setIsRevealPwd1((prevState) => !prevState)}
                 />
               </div>

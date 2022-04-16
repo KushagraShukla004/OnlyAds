@@ -117,6 +117,7 @@ export default function Login() {
                 <img
                   title={isRevealPwd ? "Hide password" : "Show password"}
                   src={isRevealPwd ? hidePwdImg : showPwdImg}
+                  alt=""
                   onClick={() => setIsRevealPwd((prevState) => !prevState)}
                 />
               </div>
