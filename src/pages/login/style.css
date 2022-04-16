@@ -1,0 +1,12 @@
+.pwd-container {
+  position: relative;
+}
+
+.pwd-container img {
+  cursor: pointer;
+  position: absolute;
+  width: 35px;
+  right: 10px;
+  margin-top: 17px;
+  z-index: 1;
+}
