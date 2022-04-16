@@ -1,4 +1,6 @@
 import * as React from "react";
+import "./style.css";
+import { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -12,6 +14,8 @@ import Grid from "@mui/material/Grid";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import showPwdImg from "../../images/visibility_black_24dp.svg";
+import hidePwdImg from "../../images/visibility_off_black_24dp.svg";
 
 function Copyright(props) {
   return (
@@ -43,7 +47,11 @@ export default function Signup() {
       password: data.get("password"),
     });
   };
+  const [password, setPassword] = useState("");
+  const [isRevealPwd, setIsRevealPwd] = useState(false);
 
+  const [password1, setPassword1] = useState("");
+  const [isRevealPwd1, setIsRevealPwd1] = useState(false);
   return (
     <ThemeProvider theme={theme}>
       <Grid container component="main" sx={{ height: "100vh" }}>
@@ -94,7 +102,6 @@ export default function Signup() {
                 label="User Name"
                 name="username"
                 autoComplete="username"
-                autoFocus
               />
               <TextField
                 margin="normal"
@@ -106,16 +113,52 @@ export default function Signup() {
                 autoComplete="email"
                 autoFocus
               />
-              <TextField
+              <div className="pwd-container">
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  name="password"
+                  label="Password"
+                  id="password"
+                  autoComplete="current-password"
+                  type={isRevealPwd ? "text" : "password"}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <img
+                  title={isRevealPwd ? "Hide password" : "Show password"}
+                  src={isRevealPwd ? hidePwdImg : showPwdImg}
+                  onClick={() => setIsRevealPwd((prevState) => !prevState)}
+                />
+              </div>
+              {/* <TextField
                 margin="normal"
                 required
                 fullWidth
-                name="password"
-                label="Password"
+                name="confirm_password"
+                label="Confirm Password"
                 type="password"
-                id="password"
-                autoComplete="current-password"
-              />
+                id="confirm_password"
+              /> */}
+              <div className="pwd-container">
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  name="confirm_password"
+                  label="Confirm Password"
+                  id="confirm_password"
+                  type={isRevealPwd1 ? "text" : "password"}
+                  value={password1}
+                  onChange={(e) => setPassword1(e.target.value)}
+                />
+                <img
+                  title={isRevealPwd1 ? "Hide password" : "Show password"}
+                  src={isRevealPwd1 ? hidePwdImg : showPwdImg}
+                  onClick={() => setIsRevealPwd1((prevState) => !prevState)}
+                />
+              </div>
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"

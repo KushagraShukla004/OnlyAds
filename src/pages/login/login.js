@@ -1,4 +1,6 @@
 import * as React from "react";
+import "./style.css";
+import { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -12,6 +14,8 @@ import Grid from "@mui/material/Grid";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import showPwdImg from "../../images/visibility_black_24dp.svg";
+import hidePwdImg from "../../images/visibility_off_black_24dp.svg";
 
 function Copyright(props) {
   return (
@@ -42,6 +46,8 @@ export default function Login() {
       password: data.get("password"),
     });
   };
+  const [password, setPassword] = useState("");
+  const [isRevealPwd, setIsRevealPwd] = useState(false);
 
   return (
     <ThemeProvider theme={theme}>
@@ -95,16 +101,25 @@ export default function Login() {
                 autoComplete="email"
                 autoFocus
               />
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
-              />
+              <div className="pwd-container">
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  name="password"
+                  label="Password"
+                  id="password"
+                  autoComplete="current-password"
+                  type={isRevealPwd ? "text" : "password"}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <img
+                  title={isRevealPwd ? "Hide password" : "Show password"}
+                  src={isRevealPwd ? hidePwdImg : showPwdImg}
+                  onClick={() => setIsRevealPwd((prevState) => !prevState)}
+                />
+              </div>
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"

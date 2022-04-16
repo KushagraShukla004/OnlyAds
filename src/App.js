@@ -5,7 +5,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Services from "./pages/Services";
-import Products from "./pages/Products";
+import Gallery from "./pages/Gallery";
 import Login from "./pages/login/login";
 import Signup from "./pages/login/signup";
 import ContactForm from "./components/contactform";
@@ -31,7 +31,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/services" component={Services} />
-          <Route path="/products" component={Products} />
+          <Route path="/gallery" component={Gallery} />
           <Route path="/sign-up" component={Signup} />
           <Route path="/login" component={Login} />
           <Route path="/contact-us" component={ContactForm} />
