@@ -62,7 +62,7 @@ export default function Signup() {
           sm={4}
           md={7}
           sx={{
-            backgroundImage: "url(https://source.unsplash.com/random)",
+            backgroundImage: "url(https://picsum.photos/769/769?image=113)",
             backgroundRepeat: "no-repeat",
             backgroundColor: (t) =>
               t.palette.mode === "light"
@@ -94,7 +94,7 @@ export default function Signup() {
               onSubmit={handleSubmit}
               sx={{ mt: 1 }}
             >
-              <TextField
+              {/* <TextField
                 margin="normal"
                 required
                 fullWidth
@@ -102,7 +102,7 @@ export default function Signup() {
                 label="User Name"
                 name="username"
                 autoComplete="username"
-              />
+              /> */}
               <TextField
                 margin="normal"
                 required
