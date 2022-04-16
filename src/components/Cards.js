@@ -18,8 +18,8 @@ function Cards() {
             <CardItem
               src="/images1/cardboard-cups.jpg"
               text="Exquisite quality"
-              label="Products"
-              path="/products"
+              label="Gallery"
+              path="/gallery"
             />
           </ul>
           <ul className="cards__items">
