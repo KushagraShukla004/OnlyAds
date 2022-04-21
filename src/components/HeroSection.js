@@ -7,8 +7,7 @@ function HeroSection() {
   return (
     <div className="hero-container">
       {/* <video src='/videos/video-1.mp4' autoPlay loop muted /> */}
-      <h1>Tagline</h1>
-      <p>What are you waiting for?</p>
+      {/* <h1>What are you waiting for?</h1> */}
       <div className="hero-btns">
         <Button
           className="btns"
@@ -16,7 +15,7 @@ function HeroSection() {
           buttonSize="btn--large"
           onClick={console.log("hey")}
         >
-          GET STARTED
+          LETS GET STARTED!
         </Button>
       </div>
     </div>

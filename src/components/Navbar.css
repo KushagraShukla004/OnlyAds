@@ -14,17 +14,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 70px;
   max-width: 1500px;
+}
+
+.navbar-container p {
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  margin-left: 60px;
+  color: rgb(223, 212, 212);
+  font-size: 1.7rem;
+  text-decoration: none;
+  padding-top: 15px;
 }
 
 .navbar-logo {
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 10px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.9rem;
   display: flex;
   align-items: center;
 }
@@ -40,7 +51,7 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 60vw;
+  width: 40vw;
   justify-content: end;
   margin-right: 2rem;
 }
@@ -55,7 +66,7 @@
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  height: 135%;
+  height: 130%;
 }
 
 .nav-links:hover {
