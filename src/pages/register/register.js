@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./style.css";
+import "./register.css";
 import { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
@@ -37,7 +37,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function Signup() {
+export default function Register() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
