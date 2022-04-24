@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/OnlyAds/static/css/main.e5966b10.chunk.css",
+    "main.js": "/OnlyAds/static/js/main.730eaae7.chunk.js",
+    "main.js.map": "/OnlyAds/static/js/main.730eaae7.chunk.js.map",
+    "runtime-main.js": "/OnlyAds/static/js/runtime-main.cb3dfe8b.js",
+    "runtime-main.js.map": "/OnlyAds/static/js/runtime-main.cb3dfe8b.js.map",
+    "static/css/2.0bfa1f85.chunk.css": "/OnlyAds/static/css/2.0bfa1f85.chunk.css",
+    "static/js/2.c1340259.chunk.js": "/OnlyAds/static/js/2.c1340259.chunk.js",
+    "static/js/2.c1340259.chunk.js.map": "/OnlyAds/static/js/2.c1340259.chunk.js.map",
+    "index.html": "/OnlyAds/index.html",
+    "precache-manifest.a4c0c97348ea17b26156465cf948d733.js": "/OnlyAds/precache-manifest.a4c0c97348ea17b26156465cf948d733.js",
+    "service-worker.js": "/OnlyAds/service-worker.js",
+    "static/css/2.0bfa1f85.chunk.css.map": "/OnlyAds/static/css/2.0bfa1f85.chunk.css.map",
+    "static/css/main.e5966b10.chunk.css.map": "/OnlyAds/static/css/main.e5966b10.chunk.css.map",
+    "static/js/2.c1340259.chunk.js.LICENSE.txt": "/OnlyAds/static/js/2.c1340259.chunk.js.LICENSE.txt",
+    "static/media/OnlyAds1.ico": "/OnlyAds/static/media/OnlyAds1.847f6e81.ico",
+    "static/media/UploadIcon.svg": "/OnlyAds/static/media/UploadIcon.1cedb6e9.svg",
+    "static/media/barista.jpg": "/OnlyAds/static/media/barista.53b0b230.jpg",
+    "static/media/coffee-paper-cup.jpg": "/OnlyAds/static/media/coffee-paper-cup.e69be2c0.jpg",
+    "static/media/HeroSection.css": "/OnlyAds/static/media/huge_cup.afa13c85.jpg",
+    "static/media/krispy.jpg": "/OnlyAds/static/media/krispy.2b37885e.jpg",
+    "static/media/loginbg1.jpg": "/OnlyAds/static/media/loginbg1.ce166a9d.jpg",
+    "static/media/logo.png": "/OnlyAds/static/media/logo.efe8c90f.png",
+    "static/media/mock1.png": "/OnlyAds/static/media/mock1.07ce6d2f.png",
+    "static/media/mock2.png": "/OnlyAds/static/media/mock2.060a0233.png",
+    "static/media/panda_cup.jpg": "/OnlyAds/static/media/panda_cup.28b52cf0.jpg",
+    "static/media/App.css": "/OnlyAds/static/media/services.4143d240.jpg",
+    "static/media/small_cup.jpg": "/OnlyAds/static/media/small_cup.a6e36203.jpg",
+    "static/media/tea.jpg": "/OnlyAds/static/media/tea.34b8a275.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb3dfe8b.js",
+    "static/css/2.0bfa1f85.chunk.css",
+    "static/js/2.c1340259.chunk.js",
+    "static/css/main.e5966b10.chunk.css",
+    "static/js/main.730eaae7.chunk.js"
+  ]
+}
