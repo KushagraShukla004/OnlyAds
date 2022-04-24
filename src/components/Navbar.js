@@ -31,18 +31,27 @@ function Navbar() {
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             OnlyAds
             <i class="fab fa-typo3" />
-            <p>Your Brand in Everyones Hand </p>
           </Link>
+          <p>Your Brand in Everyones Hand </p>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
+            <li className="nav-item-left">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item-left">
+              <Link
+                to="/dashboard"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Dashboard
+              </Link>
+            </li>
+            <li className="nav-item-left">
               <Link
                 to="/design"
                 className="nav-links"
@@ -51,7 +60,7 @@ function Navbar() {
                 Design
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item-left">
               <Link
                 to="/Gallery"
                 className="nav-links"
@@ -60,7 +69,7 @@ function Navbar() {
                 Gallery
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item-left">
               <Link to="/login" className="nav-links" onClick={closeMobileMenu}>
                 Login
               </Link>
@@ -75,7 +84,7 @@ function Navbar() {
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link
                 to="/contact-us"
                 className="nav-links-mobile"
@@ -83,7 +92,7 @@ function Navbar() {
               >
                 Contact Us
               </Link>
-            </li>
+            </li> */}
           </ul>
           {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
         </div>

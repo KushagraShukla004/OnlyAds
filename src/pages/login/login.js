@@ -1,155 +1,93 @@
-import * as React from "react";
-import "./style.css";
-import { useState } from "react";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import CssBaseline from "@mui/material/CssBaseline";
-import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import Link from "@mui/material/Link";
-import Paper from "@mui/material/Paper";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import Typography from "@mui/material/Typography";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import showPwdImg from "../../images/visibility_black_24dp.svg";
-import hidePwdImg from "../../images/visibility_off_black_24dp.svg";
+import React from "react";
+import {
+  StyledTextInput,
+  StyledFormArea,
+  StyledFormButton,
+  StyledLabel,
+  Avatar,
+  StyledTitle,
+  colors,
+  ButtonGroup,
+  ExtraText,
+  TextLink,
+  CopyrightText,
+} from "./../../components/Styles";
+//logo
+import Logo from "./../../images/OnlyAds.ico";
+//formik
+import { Formik, Form } from "formik";
+import { TextInput } from "./../../components/FormLib";
+import * as Yup from "yup";
+//icons
+import { FiMail, FiLock } from "react-icons/fi";
 
-function Copyright(props) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        OnlyAds
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
+//auth and Redux
+import { connect } from "react-redux";
+import { loginUser } from "../../auth/actions/userActions";
+import { useHistory, useParams } from "react-router-dom";
 
-const theme = createTheme();
-
-export default function Login() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
-  };
-  const [password, setPassword] = useState("");
-  const [isRevealPwd, setIsRevealPwd] = useState(false);
+const Login = ({ loginUser }) => {
+  const history = useHistory();
+  const { userEmail } = useParams();
 
   return (
-    <ThemeProvider theme={theme}>
-      <Grid container component="main" sx={{ height: "100vh" }}>
-        <CssBaseline />
-        <Grid
-          item
-          xs={false}
-          sm={4}
-          md={7}
-          sx={{
-            backgroundImage: "url(https://picsum.photos/769/769?image=113)",
-            backgroundRepeat: "no-repeat",
-            backgroundColor: (t) =>
-              t.palette.mode === "light"
-                ? t.palette.grey[50]
-                : t.palette.grey[900],
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+    <div>
+      <StyledFormArea>
+        <Avatar image={Logo} />
+        <StyledTitle color={colors.theme} size={30}>
+          Login
+        </StyledTitle>
+        <Formik
+          initialValues={{
+            email: userEmail,
+            password: "",
           }}
-        />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
-          <Box
-            sx={{
-              my: 8,
-              mx: 4,
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-              <LockOutlinedIcon />
-            </Avatar>
-            <Typography component="h1" variant="h5">
-              Sign in
-            </Typography>
-            <Box
-              component="form"
-              noValidate
-              onSubmit={handleSubmit}
-              sx={{ mt: 1 }}
-            >
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                id="email"
-                label="Email Address"
+          validationSchema={Yup.object({
+            email: Yup.string()
+              .email("Invalid email address")
+              .required("Required"),
+            password: Yup.string()
+              .min(8, "Password must be at least 8 characters")
+              .max(20, "Password is too long")
+              .required("Required"),
+          })}
+          onSubmit={(values, { setSubmitting, setFieldError }) => {
+            console.log(values);
+            loginUser(values, history, setFieldError, setSubmitting);
+          }}
+        >
+          {() => (
+            <Form>
+              <TextInput
                 name="email"
-                autoComplete="email"
-                autoFocus
+                type="text"
+                label="Email Address"
+                placeholder="abc@example.com"
+                icon={<FiMail />}
               />
-              <div className="pwd-container">
-                <TextField
-                  margin="normal"
-                  required
-                  fullWidth
-                  name="password"
-                  label="Password"
-                  id="password"
-                  autoComplete="current-password"
-                  type={isRevealPwd ? "text" : "password"}
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                <img
-                  title={isRevealPwd ? "Hide password" : "Show password"}
-                  src={isRevealPwd ? hidePwdImg : showPwdImg}
-                  alt=""
-                  onClick={() => setIsRevealPwd((prevState) => !prevState)}
-                />
-              </div>
-              <FormControlLabel
-                control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
+
+              <TextInput
+                name="password"
+                type="password"
+                label="Password"
+                placeholder="********"
+                icon={<FiLock />}
               />
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                sx={{ mt: 3, mb: 2 }}
-              >
-                Sign In
-              </Button>
-              <Grid container>
-                <Grid item xs>
-                  <Link href="#" variant="body2">
-                    Forgot password?
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link href="/sign-up" variant="body2">
-                    {"Don't have an account? Sign Up"}
-                  </Link>
-                </Grid>
-              </Grid>
-              <Copyright sx={{ mt: 5 }} />
-            </Box>
-          </Box>
-        </Grid>
-      </Grid>
-    </ThemeProvider>
+
+              <ButtonGroup>
+                <StyledFormButton type="submit">Login</StyledFormButton>
+              </ButtonGroup>
+            </Form>
+          )}
+        </Formik>
+        <ExtraText>
+          New Here? <TextLink to="/register">Register!</TextLink>
+        </ExtraText>
+      </StyledFormArea>
+      <CopyrightText>OnlyAds.</CopyrightText>
+      <CopyrightText> All rights reserved &copy;2022</CopyrightText>
+    </div>
   );
-}
+};
+
+export default connect(null, { loginUser })(Login);

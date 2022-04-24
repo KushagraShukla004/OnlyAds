@@ -39,7 +39,7 @@ function Cards() {
               src="/images1/true_coffee.jpg"
               text="We are READY whenever you are"
               label="Sign-Up"
-              path="/sign-up"
+              path="/register"
             />
           </ul>
         </div>
