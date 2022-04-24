@@ -9,7 +9,7 @@ import {
   colors,
 } from "./../components/Styles";
 //logo
-import Logo from "./../images/logo1.png";
+import Logo from "./../images/logo.png";
 
 //Router
 import { useHistory, useParams } from "react-router-dom";

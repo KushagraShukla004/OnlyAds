@@ -13,7 +13,7 @@ import {
   CopyrightText,
 } from "./../../components/Styles";
 //logo
-import Logo from "./../../images/OnlyAds.ico";
+import Logo from "./../../images/OnlyAds1.ico";
 //formik
 import { Formik, Form } from "formik";
 import { TextInput } from "./../../components/FormLib";
