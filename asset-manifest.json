@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/OnlyAds/static/css/main.92b7f669.chunk.css",
-    "main.js": "/OnlyAds/static/js/main.3c0251c6.chunk.js",
-    "main.js.map": "/OnlyAds/static/js/main.3c0251c6.chunk.js.map",
+    "main.js": "/OnlyAds/static/js/main.963fd40b.chunk.js",
+    "main.js.map": "/OnlyAds/static/js/main.963fd40b.chunk.js.map",
     "runtime-main.js": "/OnlyAds/static/js/runtime-main.cb3dfe8b.js",
     "runtime-main.js.map": "/OnlyAds/static/js/runtime-main.cb3dfe8b.js.map",
     "static/css/2.0bfa1f85.chunk.css": "/OnlyAds/static/css/2.0bfa1f85.chunk.css",
     "static/js/2.c1340259.chunk.js": "/OnlyAds/static/js/2.c1340259.chunk.js",
     "static/js/2.c1340259.chunk.js.map": "/OnlyAds/static/js/2.c1340259.chunk.js.map",
     "index.html": "/OnlyAds/index.html",
-    "precache-manifest.08cd3b800a34664559b1b4094b5b4712.js": "/OnlyAds/precache-manifest.08cd3b800a34664559b1b4094b5b4712.js",
+    "precache-manifest.97edb574ae03d01ae69d9211481ca0e1.js": "/OnlyAds/precache-manifest.97edb574ae03d01ae69d9211481ca0e1.js",
     "service-worker.js": "/OnlyAds/service-worker.js",
     "static/css/2.0bfa1f85.chunk.css.map": "/OnlyAds/static/css/2.0bfa1f85.chunk.css.map",
     "static/css/main.92b7f669.chunk.css.map": "/OnlyAds/static/css/main.92b7f669.chunk.css.map",
@@ -34,6 +34,6 @@
     "static/css/2.0bfa1f85.chunk.css",
     "static/js/2.c1340259.chunk.js",
     "static/css/main.92b7f669.chunk.css",
-    "static/js/main.3c0251c6.chunk.js"
+    "static/js/main.963fd40b.chunk.js"
   ]
 }

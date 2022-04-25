@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b81e9ec5e21d307efad40245a6cb7084",
+    "revision": "e200d320c3786297472e3030c903bc2b",
     "url": "/OnlyAds/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OnlyAds/static/css/2.0bfa1f85.chunk.css"
   },
   {
-    "revision": "46f85a25b8561c73b6bc",
+    "revision": "75aa8836a9b56f3be3d8",
     "url": "/OnlyAds/static/css/main.92b7f669.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OnlyAds/static/js/2.c1340259.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "46f85a25b8561c73b6bc",
-    "url": "/OnlyAds/static/js/main.3c0251c6.chunk.js"
+    "revision": "75aa8836a9b56f3be3d8",
+    "url": "/OnlyAds/static/js/main.963fd40b.chunk.js"
   },
   {
     "revision": "9b59ba190cad6e43e18e",
