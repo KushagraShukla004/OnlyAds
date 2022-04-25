@@ -60,9 +60,9 @@ const Gallery = () => {
   return (
     <>
       <video src="/videos/back2.mp4" autoPlay loop muted />
-      <h1 style={{ color: "#DCDCDC", fontFamily: "Helvetica" }}>
+      {/* <h1 style={{ color: "#DCDCDC", fontFamily: "Helvetica" }}>
         Our Products Gallery
-      </h1>
+      </h1> */}
       <div className={model ? "model open" : "model"}>
         <img src={tempingSrc} alt="pop-up" />
         <CloseIcon onClick={() => setModel(false)} />

@@ -4,6 +4,7 @@ import {
   StyledSubTitle,
   Avatar,
   StyledFormButton,
+  StyledButton,
   ButtonGroup,
   StyledFormArea,
   colors,
@@ -40,8 +41,8 @@ const Dashboard = ({ logoutUser, user }) => {
         <StyledTitle size={55}>{user.name}</StyledTitle>
         <StyledSubTitle size={27}>Start Your Journy with us</StyledSubTitle>
         <ButtonGroup>
-          <StyledFormButton to="/design">Design</StyledFormButton>
-          <StyledFormButton to="/gallery">Gallery</StyledFormButton>
+          <StyledButton to="/design">Design</StyledButton>
+          <StyledButton to="/gallery">Gallery</StyledButton>
           <StyledFormButton to="#" onClick={() => logoutUser(history)}>
             Logout
           </StyledFormButton>

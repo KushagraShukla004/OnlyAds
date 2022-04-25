@@ -20,14 +20,15 @@ import { connect } from "react-redux";
 function App({ checked }) {
   return (
     <>
-      <Router>
+      <Router basename="/OnlyAds">
         {checked && (
           <>
             <Navbar />
             <Switch>
               <Route path="/" exact component={Home} />
-              <Route path="/gallery" component={Gallery} />
+
               <StyledContainer>
+                <Route path="/gallery" component={Gallery} />
                 {/* <Route path="/contact-us" component={ContactForm} /> */}
                 <Route path="/design" component={Design} />
                 <AuthRoute path="/dashboard">

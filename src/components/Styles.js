@@ -55,24 +55,22 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledButton = styled(Link)`
-    padding: 10px;
-    width: 150px;
-    background-color: transparent;
-    font-size: 16px;
-    border: 3px solid ${colors.primary};
-    border-radius: 25px;
-    color: ${colors.primary};
-    text-decoration: none;
-    text-align: center;
-    outline: 0;
-    transition: ease-in-out 0.3s
+  padding: 10px;
+  width: 150px;
+  background-color: transparent;
+  font-size: 16px;
+  border: 2px solid ${colors.theme};
+  border-radius: 25px;
+  color: ${colors.theme};
+  transition: ease-in-out 0.3s;
+  outline: 0;
 
-    &:hover{
-        background-color: ${colors.primary};
-        color:${colors.theme};
-        cursor:pointer;
-    }
-    `;
+  &:hover {
+    background-color: ${colors.theme};
+    color: ${colors.primary};
+    cursor: pointer;
+  }
+`;
 export const ButtonGroup = styled.div`
   display: flex;
   justify-content: space-around;
