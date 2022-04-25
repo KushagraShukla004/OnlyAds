@@ -28,12 +28,6 @@ function App({ checked }) {
               <Route path="/" exact component={Home} />
 
               <StyledContainer>
-                <Route path="/gallery" component={Gallery} />
-                {/* <Route path="/contact-us" component={ContactForm} /> */}
-                <Route path="/design" component={Design} />
-                <AuthRoute path="/dashboard">
-                  <Dashboard />
-                </AuthRoute>
                 <BasicRoute path="/emailsent/:userEmail">
                   <EmailSent />
                 </BasicRoute>
@@ -43,6 +37,12 @@ function App({ checked }) {
                 <BasicRoute path="/login/:userEmail?">
                   <Login />
                 </BasicRoute>
+                <AuthRoute path="/dashboard">
+                  <Dashboard />
+                </AuthRoute>
+                <Route path="/gallery" component={Gallery} />
+                {/* <Route path="/contact-us" component={ContactForm} /> */}
+                <Route path="/design" component={Design} />
               </StyledContainer>
             </Switch>
           </>
