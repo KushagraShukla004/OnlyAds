@@ -3,9 +3,9 @@ import axios from "axios";
 import { sessionService } from "redux-react-session";
 
 //the remote endpoint and local
-const remoteUrl = "https://kushagrashukla004.github.io/OnlyAds/";
+const remoteUrl = "https://shielded-journey-18131.herokuapp.com/";
 const localUrl = "http://localhost:5000/";
-const currentUrl = remoteUrl;
+const currentUrl = localUrl;
 
 export const loginUser = (
   credentials,

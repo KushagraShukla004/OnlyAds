@@ -1,6 +1,11 @@
 import React from "react";
 import "./Cards.css";
 import CardItem from "./CardItem";
+import Coffee from "./../images/coffee.jpg";
+import Cardboard from "./../images/cardboard-cups.jpg";
+import Paper_coffee from "./../images/coffee-paper-cup.jpg";
+import Barista from "./../images/barista.jpg";
+import TrueCoffee from "./../images/true_coffee.jpg";
 
 function Cards() {
   return (
@@ -10,13 +15,13 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="/images1/coffee.jpg"
+              src={Coffee}
               text="Custom branding"
               label="Services"
               path="/services"
             />
             <CardItem
-              src="/images1/cardboard-cups.jpg"
+              src={Cardboard}
               text="Exquisite quality"
               label="Gallery"
               path="/gallery"
@@ -24,19 +29,19 @@ function Cards() {
           </ul>
           <ul className="cards__items">
             <CardItem
-              src="/images1/coffee-paper-cup.jpg"
+              src={Paper_coffee}
               text="Customer Services"
               label="Services"
               path="/services"
             />
             <CardItem
-              src="/images1/barista.jpg"
+              src={Barista}
               text="No matter how early your company is"
               label="Services"
               path="/services"
             />
             <CardItem
-              src="/images1/true_coffee.jpg"
+              src={TrueCoffee}
               text="We are READY whenever you are"
               label="Sign-Up"
               path="/sign-up"

@@ -3,7 +3,7 @@ import {
   StyledTitle,
   ExtraText,
   Avatar,
-  StyledFormButton,
+  StyledButton,
   ButtonGroup,
   StyledFormArea,
   colors,
@@ -44,9 +44,7 @@ const EmailSent = () => {
         </ExtraText>
 
         <ButtonGroup>
-          <StyledFormButton to={`/login/${userEmail}`}>
-            Proceed
-          </StyledFormButton>
+          <StyledButton to={`/login/${userEmail}`}>Proceed</StyledButton>
         </ButtonGroup>
       </StyledFormArea>
     </div>
