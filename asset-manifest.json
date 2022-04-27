@@ -1,23 +1,25 @@
 {
   "files": {
     "main.css": "/OnlyAds/static/css/main.92b7f669.chunk.css",
-    "main.js": "/OnlyAds/static/js/main.963fd40b.chunk.js",
-    "main.js.map": "/OnlyAds/static/js/main.963fd40b.chunk.js.map",
+    "main.js": "/OnlyAds/static/js/main.29261228.chunk.js",
+    "main.js.map": "/OnlyAds/static/js/main.29261228.chunk.js.map",
     "runtime-main.js": "/OnlyAds/static/js/runtime-main.cb3dfe8b.js",
     "runtime-main.js.map": "/OnlyAds/static/js/runtime-main.cb3dfe8b.js.map",
     "static/css/2.0bfa1f85.chunk.css": "/OnlyAds/static/css/2.0bfa1f85.chunk.css",
-    "static/js/2.c1340259.chunk.js": "/OnlyAds/static/js/2.c1340259.chunk.js",
-    "static/js/2.c1340259.chunk.js.map": "/OnlyAds/static/js/2.c1340259.chunk.js.map",
+    "static/js/2.5020766a.chunk.js": "/OnlyAds/static/js/2.5020766a.chunk.js",
+    "static/js/2.5020766a.chunk.js.map": "/OnlyAds/static/js/2.5020766a.chunk.js.map",
     "index.html": "/OnlyAds/index.html",
-    "precache-manifest.97edb574ae03d01ae69d9211481ca0e1.js": "/OnlyAds/precache-manifest.97edb574ae03d01ae69d9211481ca0e1.js",
+    "precache-manifest.333db247044b61f9318368c16a517f1d.js": "/OnlyAds/precache-manifest.333db247044b61f9318368c16a517f1d.js",
     "service-worker.js": "/OnlyAds/service-worker.js",
     "static/css/2.0bfa1f85.chunk.css.map": "/OnlyAds/static/css/2.0bfa1f85.chunk.css.map",
     "static/css/main.92b7f669.chunk.css.map": "/OnlyAds/static/css/main.92b7f669.chunk.css.map",
-    "static/js/2.c1340259.chunk.js.LICENSE.txt": "/OnlyAds/static/js/2.c1340259.chunk.js.LICENSE.txt",
+    "static/js/2.5020766a.chunk.js.LICENSE.txt": "/OnlyAds/static/js/2.5020766a.chunk.js.LICENSE.txt",
     "static/media/OnlyAds1.ico": "/OnlyAds/static/media/OnlyAds1.847f6e81.ico",
     "static/media/UploadIcon.svg": "/OnlyAds/static/media/UploadIcon.1cedb6e9.svg",
     "static/media/barista.jpg": "/OnlyAds/static/media/barista.53b0b230.jpg",
+    "static/media/cardboard-cups.jpg": "/OnlyAds/static/media/cardboard-cups.7184efab.jpg",
     "static/media/coffee-paper-cup.jpg": "/OnlyAds/static/media/coffee-paper-cup.e69be2c0.jpg",
+    "static/media/coffee.jpg": "/OnlyAds/static/media/coffee.084e5df7.jpg",
     "static/media/HeroSection.css": "/OnlyAds/static/media/huge_cup.afa13c85.jpg",
     "static/media/krispy.jpg": "/OnlyAds/static/media/krispy.2b37885e.jpg",
     "static/media/loginbg1.jpg": "/OnlyAds/static/media/loginbg1.ce166a9d.jpg",
@@ -27,13 +29,14 @@
     "static/media/panda_cup.jpg": "/OnlyAds/static/media/panda_cup.28b52cf0.jpg",
     "static/media/App.css": "/OnlyAds/static/media/services.4143d240.jpg",
     "static/media/small_cup.jpg": "/OnlyAds/static/media/small_cup.a6e36203.jpg",
-    "static/media/tea.jpg": "/OnlyAds/static/media/tea.34b8a275.jpg"
+    "static/media/tea.jpg": "/OnlyAds/static/media/tea.34b8a275.jpg",
+    "static/media/true_coffee.jpg": "/OnlyAds/static/media/true_coffee.ea26b41e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.cb3dfe8b.js",
     "static/css/2.0bfa1f85.chunk.css",
-    "static/js/2.c1340259.chunk.js",
+    "static/js/2.5020766a.chunk.js",
     "static/css/main.92b7f669.chunk.css",
-    "static/js/main.963fd40b.chunk.js"
+    "static/js/main.29261228.chunk.js"
   ]
 }

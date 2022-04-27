@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e200d320c3786297472e3030c903bc2b",
+    "revision": "7b07da314d410576f5eee00bedce3aa2",
     "url": "/OnlyAds/index.html"
   },
   {
-    "revision": "85cb735a9e67e4794408",
+    "revision": "d7d31cd1e8e6d1887d0b",
     "url": "/OnlyAds/static/css/2.0bfa1f85.chunk.css"
   },
   {
-    "revision": "75aa8836a9b56f3be3d8",
+    "revision": "bb7935d0376f2d73b4be",
     "url": "/OnlyAds/static/css/main.92b7f669.chunk.css"
   },
   {
-    "revision": "85cb735a9e67e4794408",
-    "url": "/OnlyAds/static/js/2.c1340259.chunk.js"
+    "revision": "d7d31cd1e8e6d1887d0b",
+    "url": "/OnlyAds/static/js/2.5020766a.chunk.js"
   },
   {
     "revision": "c16c00b73717fd5c7d8336fe4c7a6157",
-    "url": "/OnlyAds/static/js/2.c1340259.chunk.js.LICENSE.txt"
+    "url": "/OnlyAds/static/js/2.5020766a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "75aa8836a9b56f3be3d8",
-    "url": "/OnlyAds/static/js/main.963fd40b.chunk.js"
+    "revision": "bb7935d0376f2d73b4be",
+    "url": "/OnlyAds/static/js/main.29261228.chunk.js"
   },
   {
     "revision": "9b59ba190cad6e43e18e",
@@ -40,8 +40,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OnlyAds/static/media/barista.53b0b230.jpg"
   },
   {
+    "revision": "7184efabd2395e0fe279cf2b20e515fa",
+    "url": "/OnlyAds/static/media/cardboard-cups.7184efab.jpg"
+  },
+  {
     "revision": "e69be2c082cf6c299934b0003258470e",
     "url": "/OnlyAds/static/media/coffee-paper-cup.e69be2c0.jpg"
+  },
+  {
+    "revision": "084e5df78df5a503b399f724879bd63c",
+    "url": "/OnlyAds/static/media/coffee.084e5df7.jpg"
   },
   {
     "revision": "afa13c8564fdc9efad4d2e738c71602a",
@@ -82,5 +90,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "34b8a275352b37d79c67b694f2a296e6",
     "url": "/OnlyAds/static/media/tea.34b8a275.jpg"
+  },
+  {
+    "revision": "ea26b41e7549cd05779f5df329639a39",
+    "url": "/OnlyAds/static/media/true_coffee.ea26b41e.jpg"
   }
 ]);
